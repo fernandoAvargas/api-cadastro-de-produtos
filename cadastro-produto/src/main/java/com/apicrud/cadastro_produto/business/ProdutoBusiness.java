@@ -4,8 +4,6 @@ import com.apicrud.cadastro_produto.infrastructure.entities.Produto;
 import com.apicrud.cadastro_produto.infrastructure.repositories.ProdutoRepository;
 import org.springframework.stereotype.Service;
 
-import java.util.Optional;
-
 @Service
 public class ProdutoBusiness {
 
