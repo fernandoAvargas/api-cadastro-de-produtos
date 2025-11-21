@@ -18,10 +18,10 @@ public class ProdutoBusiness {
     }
 
     public Produto buscarProdutoPorCodigo(String codigo){
-        return repository.findByCode(codigo).orElseThrow(()-> new RuntimeException("Produto não encontrado!")); }
+        return repository.findByCodigo(codigo).orElseThrow(()-> new RuntimeException("Produto não encontrado!")); }
 
     public void deletarProdutoPorCodigo(String codigo){
-        repository.deleteByCode(codigo);
+        repository.deleteByCodigo(codigo);
     }
 
     public void atualizarProdutoPorId(Integer id, Produto produto) {

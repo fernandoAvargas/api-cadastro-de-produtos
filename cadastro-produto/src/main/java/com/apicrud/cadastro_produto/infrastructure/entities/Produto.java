@@ -24,5 +24,4 @@ public class Produto {
 
     @Column(name = "tamanho")
     private String tamanho;
-
 }

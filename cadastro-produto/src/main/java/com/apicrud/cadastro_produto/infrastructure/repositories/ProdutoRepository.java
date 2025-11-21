@@ -7,9 +7,8 @@ import java.util.Optional;
 
 @SuppressWarnings("unused")
 public interface ProdutoRepository extends JpaRepository<Produto,Integer> {
-    Optional<Produto> findByCode(String codigo);
-
+    Optional<Produto> findByCodigo(String codigo);
     @Transactional
-    void deleteByCode(String codigo);
+    void deleteByCodigo(String codigo);
   
 }
